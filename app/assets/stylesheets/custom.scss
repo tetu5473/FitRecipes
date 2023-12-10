@@ -4,7 +4,7 @@
 /* universal */
 
 body {
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 section {
@@ -26,13 +26,13 @@ textarea {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+  line-height: 2;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 30px;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -46,7 +46,7 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 2.3em;
   line-height: 1.7em;
 }
 
@@ -96,3 +96,19 @@ p {
     color: $state-danger-text;
   }
 }
+
+.img-responsive {
+  max-width: 125vw; /* ビューポートの幅に基づいて最大幅を設定 */
+  max-height: 50vh; /* ビューポートの高さに基づいて最大高さを設定 */
+  height: auto; /* 高さを自動調整し、アスペクト比を維持 */
+}
+
+.title {
+  font-size: 12px; /* または好きなサイズに */
+}
+
+.jumbotron, .container, .row, .col-md-12 {
+  padding: 1px; /* パディングを減らします */
+  margin: 1px; /* マージンを減らします */
+}
+
