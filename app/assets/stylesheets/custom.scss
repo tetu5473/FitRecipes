@@ -4,7 +4,7 @@
 /* universal */
 
 body {
-  padding-top: 10px;
+  padding-top: 60px;
 }
 
 section {
@@ -26,13 +26,13 @@ textarea {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 2;
+  line-height: 1;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -46,7 +46,7 @@ h2 {
 }
 
 p {
-  font-size: 2.3em;
+  font-size: 1.1em;
   line-height: 1.7em;
 }
 
