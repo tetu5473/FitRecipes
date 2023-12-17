@@ -3,8 +3,11 @@ source "https://rubygems.org"
 
 ruby "3.0.6"
 gem "rails", "~> 7.1.0"
-gem 'bcrypt' # 今回追加するgemです
+gem 'bcrypt' 
+gem 'faker' 
 gem 'bootstrap-sass'
+gem 'will_paginate' 
+gem 'bootstrap-will_paginate' 
 gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
 gem "puma", ">= 5.0"
