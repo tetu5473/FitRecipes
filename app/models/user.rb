@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   # 「remember_token」という仮想の属性を作成します。
   attr_accessor :remember_token
+  has_many :recipes
+
   before_save { self.email = email.downcase }
 
   validates :name,  presence: true, length: { maximum: 50 }
