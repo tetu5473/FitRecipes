@@ -1,0 +1,26 @@
+<h1>レシピ一覧</h1>
+
+<%= link_to '新しいレシピを追加', new_recipe_path %>
+
+<table>
+  <thead>
+    <tr>
+      <th>タイトル</th>
+      <th>説明</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @recipes.each do |recipe| %>
+      <tr>
+        <td><%= recipe.title %></td>
+        <td><%= recipe.description %></td>
+        <td>
+          <%= link_to '詳細', recipe_path(recipe) %> |
+          <%= link_to '編集', edit_recipe_path(recipe) %> |
+          <%= link_to '削除', recipe_path(recipe), method: :delete, data: { confirm: '本当に削除しますか？' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
