@@ -15,6 +15,8 @@ gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
 gem "bootsnap", require: false
+gem 'devise'
+
 
 
 group :development, :test do
