@@ -1,8 +1,12 @@
 # app/models/recipe.rb
 class Recipe < ApplicationRecord
-  validates :title, :description, :calories, :prep_time, :cook_time, presence: true
-  validates :calories, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
-  
+  # バリデーションを設定します。
+  validates :title, presence: true
+  validates :description, presence: true
+  validates :calories, numericality: { only_integer: true }
+  validates :prep_time, numericality: { only_integer: true }
+  validates :cook_time, numericality: { only_integer: true }
+
   # 関連付け
   belongs_to :user
   has_many :ingredients

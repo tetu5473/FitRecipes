@@ -1,18 +1,11 @@
 Rails.application.routes.draw do
-  #root 'static_pages#top'
+  root 'recipes#index' # トップページをレシピの一覧ページに変更します。
   
-  # この行を残すことで、アプリケーションのルートパスをレシピのインデックスページに設定します
-  root to: 'recipes#index'
-
-  get '/signup', to: 'users#new'
-
-  # ログイン機能(セッション関連のルート)
-  get    '/login', to: 'sessions#new'
-  post   '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
-
-  # ユーザーとレシピのリソースルート
-  resources :users
-  resources :recipes
-
+  # ログイン機能も必要なければ、以下のルートも削除します。
+  # get '/signup', to: 'users#new'
+  # get '/login', to: 'sessions#new'
+  # post '/login', to: 'sessions#create'
+  # delete '/logout', to: 'sessions#destroy'
+  
+  resources :recipes, only: [:index, :show, :new, :create, :edit, :update, :destroy] # 必要なアクションのみに限定します。
 end
