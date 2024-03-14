@@ -6,7 +6,7 @@
     <%= form.text_field :title %>
   </div>
   <div>
-    <%= form.label :description, "説明" %>
+    <%= form.label :description, "内容" %>
     <%= form.text_area :description %>
   </div>
   <div>
@@ -14,13 +14,9 @@
     <%= form.number_field :calories %>
   </div>
   <div>
-    <%= form.label :prep_time, "準備時間" %>
-    <%= form.number_field :prep_time %>
-  </div>
-  <div>
     <%= form.label :cook_time, "調理時間" %>
     <%= form.number_field :cook_time %>
   </div>
 
-  <%= form.submit "作成" %>
+  　<%= form.submit "作成" %>
 <% end %>
