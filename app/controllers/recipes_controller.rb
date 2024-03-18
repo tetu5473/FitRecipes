@@ -44,6 +44,13 @@ class RecipesController < ApplicationController
     redirect_to recipes_url, alert: 'レシピが正常に削除されました。'
   end
   
+  def destroy_image
+    @recipe = Recipe.find(params[:id])
+    @image = @recipe.images.find(params[:image_id])
+    @image.purge
+    redirect_to @recipe, notice: '画像が削除されました。'
+  end
+  
   def upload_image
     @recipe = Recipe.find(params[:id])
     if params[:recipe].present? && @recipe.images.attach(params[:recipe][:images])

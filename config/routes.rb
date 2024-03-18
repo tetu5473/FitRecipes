@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :recipes do
     member do
       patch :upload_image
+      delete :destroy_image
     end
   end
 end

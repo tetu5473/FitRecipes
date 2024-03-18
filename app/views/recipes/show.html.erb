@@ -1,4 +1,4 @@
-/strength_app/app/views/recipes/show.html.erb
+/FitRecipes_app/app/views/recipes/show.html.erb
 <div class="container mt-3">
   <div class="row">
     <div class="col">
@@ -23,6 +23,7 @@
           <% end %>
           <%= link_to '編集', edit_recipe_path(@recipe), class: 'btn btn-primary' %> 
           <%= link_to '一覧に戻る', recipes_path, class: 'btn btn-secondary ml-2' %>
+          <%= link_to '画像を削除', destroy_image_recipe_path(@recipe, image_id: image.id), method: :delete %>
         </div>
       </div>
     </div>
