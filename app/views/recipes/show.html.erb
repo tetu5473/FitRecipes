@@ -18,6 +18,7 @@
           <p class="card-text"><strong>材料:</strong> <%= @recipe.description %></p>
           <p class="card-text"><strong>カロリー:</strong> <%= @recipe.calories %></p>
           <p class="card-text"><strong>調理時間:</strong> <%= @recipe.cook_time %>分</p>
+          <p class="card-text"><strong>作り方:</strong> <%= @recipe.instructions %></p>
           
           <!-- 画像アップロードフォーム -->
           <%= form_with(model: @recipe, url: upload_image_recipe_path(@recipe), method: :patch, local: true, html: { multipart: true }) do |form| %>
