@@ -16,6 +16,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "bootsnap", require: false
 gem 'devise'
+gem 'dotenv-rails', groups: [:development, :test]
 
 
 
