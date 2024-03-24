@@ -3,14 +3,8 @@ source "https://rubygems.org"
 
 ruby "3.0.6"
 gem "rails", "~> 7.1.0"
-<<<<<<< HEAD
 gem 'bcrypt' 
 gem 'faker' 
-=======
-gem 'rails-i18n'
-gem 'will_paginate', '~> 3.3'
-gem 'bcrypt' 
->>>>>>> japanization-and-time-format
 gem 'bootstrap-sass'
 gem 'will_paginate' 
 gem 'bootstrap-will_paginate' 
