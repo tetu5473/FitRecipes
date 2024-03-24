@@ -1,0 +1,113 @@
+/* 列間に仕切りを追加するカスタムスタイル */
+.table-bordered > tbody > tr > td, 
+.table-bordered > thead > tr > th {
+  border-left: 10px solid #dee2e6;
+  border-right: 10px solid #dee2e6;
+}
+
+/* 最初と最後の列の左右の境界線を削除 */
+.table-bordered > tbody > tr > td:first-child, 
+.table-bordered > thead > tr > th:first-child {
+  border-left: none;
+}
+
+.table-bordered > tbody > tr > td:last-child, 
+.table-bordered > thead > tr > th:last-child {
+  border-right: none;
+}
+
+/* 既存の.img-fluidクラスに加えて、高さの調整を追加 */
+.img-fluid {
+  max-width: 100%; /* 幅を最大100%にすることで、コンテナに合わせてサイズ調整 */
+  height: 100px; /* 高さをautoに設定してアスペクト比を保持 */
+  object-fit: cover; /* 画像が指定された高さに収まるように調整 */
+}
+
+/* コンテナのスタイル調整 */
+.container {
+  max-width: 1140px; /* 必要に応じてコンテナの最大幅を調整 */
+  margin: auto; /* 上下のマージンを自動に設定して中央揃え */
+  padding: 20px; /* コンテナ内の余白 */
+}
+
+/* テーブルのスタイル調整 */
+.table {
+  margin: 20px 0; /* テーブルの上下の余白 */
+}
+
+/* ヘッダーのスタイル調整 */
+.card-header {
+  text-align: center; /* タイトルを中央揃え */
+  font-size: 16px; /* フォントサイズを指定してヘッダーの大きさを調整 */
+  padding: 10px 15px; /* 上下のパディングを少なくしてヘッダーの高さを調整 */
+}
+
+.centered-header {
+  text-align: center;
+}
+
+/* 列間に仕切りを追加するカスタムスタイル */
+.table-bordered > tbody > tr > td, 
+.table-bordered > thead > tr > th {
+  border-left: 10px solid #dee2e6;
+  border-right: 10px solid #dee2e6;
+}
+
+/* 最初と最後の列の左右の境界線を削除 */
+.table-bordered > tbody > tr > td:first-child, 
+.table-bordered > thead > tr > th:first-child {
+  border-left: none;
+}
+
+.table-bordered > tbody > tr > td:last-child, 
+.table-bordered > thead > tr > th:last-child {
+  border-right: none;
+}
+
+/* 天気情報とコンテンツのコンテナ */
+.weather-and-content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.weather-info-container {
+  margin-right: 20px;
+  text-align: left;
+  background-color: #003366;
+  color: white;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 40px;
+}
+
+/* ジャンボトロンのスタイル */
+.center.jumbotron {
+  text-align: center;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 2em; /* タイトルのフォントサイズを調整 */
+}
+
+.city-selection-form {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.city-selection-dropdown {
+  margin: 10px 0;
+}
+
+.city-check-button {
+  margin-top: 10px;
+}

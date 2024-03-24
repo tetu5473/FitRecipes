@@ -6,6 +6,7 @@ User.create!(name: "Sample User",
              password_confirmation: "password",
              admin: true)
 
+<<<<<<< HEAD
 60.times do |n|
   name  = Faker::Name.name
   email = "sample-#{n+1}@email.com"
@@ -15,3 +16,5 @@ User.create!(name: "Sample User",
                password: password,
                password_confirmation: password)
 end
+=======
+>>>>>>> japanization-and-time-format
