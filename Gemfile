@@ -6,7 +6,6 @@ gem "rails", "~> 7.1.0"
 gem 'bcrypt' 
 gem 'faker' 
 gem 'bootstrap-sass'
-gem 'will_paginate' 
 gem 'bootstrap-will_paginate' 
 gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
@@ -32,6 +31,10 @@ end
 group :test do
   gem "capybara"
   gem "selenium-webdriver"
+end
+
+group :production do
+  gem 'pg', '1.2.3'
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
