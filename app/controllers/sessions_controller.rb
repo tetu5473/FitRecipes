@@ -8,11 +8,10 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       log_in user
       params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-      redirect_back_or user
+      redirect_to recipes_path
     else
       flash.now[:danger] = '認証に失敗しました。'
       render :new
-      #japanization-and-time-format
     end
   end
 
@@ -21,6 +20,5 @@ class SessionsController < ApplicationController
     log_out if logged_in?
     flash[:success] = 'ログアウトしました。'
     redirect_to root_url
-    #japanization-and-time-format
   end
 end
