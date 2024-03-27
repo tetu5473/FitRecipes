@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
 
   resources :users
+  resources :recipes, only: [:index, :show, :new, :create, :edit, :update, :destroy] # 必要なアクションのみに限定します。
   resources :recipes do
     member do
       patch :upload_image
